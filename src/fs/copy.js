@@ -24,7 +24,7 @@ const mkdirAsync = async (dirPath) => {
 const readFolderAsync = async (dirPath) => {
     return new Promise((resolve, reject) => fs.readdir(dirPath, (err, data) => {
         if (err) {
-            return reject(error.message);
+            return reject(err.message);
         } else{
             return resolve(data);
         }
