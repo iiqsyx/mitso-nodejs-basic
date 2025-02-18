@@ -1,5 +1,4 @@
 import fs from 'fs';
-import path from 'path';
 
 const checkingFolderExistence = async (path) => {
     return new Promise((resolve, reject) => fs.access(path, (err) => {
